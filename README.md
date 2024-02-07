@@ -1,28 +1,37 @@
-# Full Stack Developer Assignment
+## Setting Up Repository and Running the App
 
-## Overview
-Welcome to our Full Stack Developer assignment! In this task, you will be creating a dynamic web application using the .NET framework for the backend and React for the frontend. This project aims to test your skills in building robust, scalable, and user-friendly applications.
+1. **GitHub Repository Setup:**
+   - Fork the repository.
+   - Clone the forked repository to your local machine using Git.
+     ```bash
+     git clone git@github.com:carolarruda/FullStackChallenge.git
+     ```
 
-## Objectives
-- **Backend Development**: Develop the backend.
-- **Frontend Development**: Create the frontend using React.
-- **RESTful API Integration**: Implement and consume RESTful services.
-- **Swagger Documentation**: Document your APIs using Swagger for easy understanding and testing.
-- **Database Integration**: Utilize the provided SQL database to manage data.
+2. **Installing Dependencies:**
+   - Navigate to the root directory of the cloned repository.
+  - Install dependencies:
+     ```bash
+     cd <reposotory name>
+     npm install
+     ```
 
-## Requirements
-- **REST API**: Create RESTful services and ensure they are well-integrated with the frontend.
-- **Swagger**: All APIs must be documented using Swagger.
-- **SQL Database**: Use the provided SQL database for data storage and retrieval.
-- **Frontend Features**: The frontend should include:
-  - Filters for searching and sorting data. DONE
-  - Tables for displaying data. DONE
-  - Other visual components that enhance user experience.
 
-## Database: 
-We have provided with a sample AdventureWorks database in this repository. You can simply download the AdventureWorksLT2022.bak file. If you are having troubles accessing the database, you find support [here:](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms)
+3. **Starting the Server and Frontend:**
+     ```bash
+     npm start
+     ```
 
-## Personal note:
-We want to emphasis on smart and efficient work. We want to test your creativity. It is not about completing the assignment to perfection rather utilizing the time effectively. This assignment should take no longer than a few hours. Please submit the assignment within 24 hours of recieving it. 
+6. **Accessing the App:**
+   - Once both the backend server and frontend are running, you can access the app by opening your web browser and navigating to the specified URL (usually `http://localhost:3000`).
+  
+7. **Accessing the Api Specs:**
+   - After the server and app is running it's possible to access the api specs here: (`http://localhost:4000/api-docs/`).
 
-Good luck, and we look forward to seeing your solution!
+8. **Exploring the App:**
+   - Log in with the test (username: userTest, password: 1234) credentials or create a new user.
+   - Navigate through the app to explore the functionalities such as viewing clients and products, searching, and sorting data.
+
+**Note:** Ensure that the backend server and frontend are both running simultaneously to experience the full functionality of the app.
+
+Thank you for taking the time to look at my code!
+

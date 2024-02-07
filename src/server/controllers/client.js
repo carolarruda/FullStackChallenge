@@ -2,9 +2,12 @@ const { Prisma } = require("@prisma/client");
 const prisma = require("../utils/prisma");
 
 const getAllClients = async (req, res) => {
-
+  try {
     const getClients = await prisma.client.findMany();
     return res.send({ clients: getClients });
+  } catch (error) {
+    return res.status(500).json({ error: "Error fetching clients" });
+  }
 };
 const createClient = async (req, res) => {
     console.log('here');
@@ -63,8 +66,7 @@ const deleteClient = async (req, res) => {
     });
     return res.status(201).send("Client was successfully deleted");
   } catch (error) {
-    console.error("Error deleting product:", error);
-    return res.status(500).send({ error: "Error deleting product" });
+    return res.status(500).send({ error: "Error deleting client" });
   }
 };
 

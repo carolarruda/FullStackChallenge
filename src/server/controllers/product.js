@@ -2,8 +2,12 @@ const { Prisma } = require("@prisma/client");
 const prisma = require("../utils/prisma");
 
 const getAllProducts = async (req, res) => {
-  const getProducts = await prisma.product.findMany();
-  return res.send({ products: getProducts });
+  try {
+    const getProducts = await prisma.product.findMany();
+    return res.status(200).send({ products: getProducts });
+  } catch (error) {
+    return res.status(500).send({ error: "Internal server error" });
+  }
 };
 
 const deleteProduct = async (req, res) => {
@@ -17,7 +21,6 @@ const deleteProduct = async (req, res) => {
     });
     return res.status(201).send("Product was successfully deleted");
   } catch (error) {
-    console.error("Error deleting product:", error);
     return res.status(500).send({ error: "Error deleting product" });
   }
 };

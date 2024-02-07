@@ -174,7 +174,7 @@ const Login = ({ setClients, clients, register }) => {
             }}
             type="text"
             id="username"
-            placeholder={`Email Address`}
+            placeholder={`Username`}
             required
             value={username}
             onChange={handleUsername}

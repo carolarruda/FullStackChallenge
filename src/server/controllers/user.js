@@ -7,8 +7,12 @@ const jwt = require("jsonwebtoken");
 const saltRounds = 11;
 
 const getUsers = async (req, res) => {
-  const allUsers = await prisma.user.findMany()
-  res.status(200).json({ users: allUsers, status: "success" });
+  try {
+    const allUsers = await prisma.user.findMany();
+    res.status(200).json({ users: allUsers, status: "success" });
+  } catch (error) {
+    res.status(500).json({ error: "Error fetching users", status: "error" });
+  }
 };
 const registerUser = async (req, res) => {
   console.log('got here');

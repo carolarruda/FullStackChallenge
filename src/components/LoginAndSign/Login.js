@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useContext, useEffect } from "react";
 import { Context } from "../../client/App";
 import { useNavigate } from "react-router-dom";
@@ -45,7 +46,7 @@ const Login = ({ setClients, clients, register }) => {
     if (register) {
       setActive(false);
     }
-  }, []);
+  }, [setLoggedIn, register]);
 
   const handleUsername = (e) => {
     setUsername(e.target.value);

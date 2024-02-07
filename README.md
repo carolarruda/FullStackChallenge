@@ -11,7 +11,7 @@
    - Navigate to the root directory of the cloned repository.
   - Install dependencies:
      ```bash
-     cd <reposotory name>
+     cd <repository name>
      npm install
      ```
 

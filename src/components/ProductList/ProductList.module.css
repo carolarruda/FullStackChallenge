@@ -1,0 +1,23 @@
+.clientsContainer {
+  background-color: #ffffff;
+  min-width: 300px;
+  min-height: 500px;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+
+  text-align: left;
+  color: #000000;
+}
+
+.tableContainer {
+  margin-top: 40px;
+}

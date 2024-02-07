@@ -1,0 +1,141 @@
+.tableContainer {
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.headersContainer {
+  background-color: #f2f2f2;
+}
+
+.tableHeaders th {
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tableHeaders th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.tableHeaders th:last-child {
+  border-top-right-radius: 8px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+tbody td {
+  padding: 8px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.deleteButton {
+  padding: 6px 12px;
+  font-size: 12px;
+  background-color: #5932ea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #4c2bc2;
+}
+
+.headersContainer span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tableContainer {
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.searchInput::placeholder {
+  color: #aaa;
+}
+
+.searchInput:focus {
+  border-color: #2196f3;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  line-height: 10px;
+
+}
+
+.paginationButton:hover {
+  background-color: #5f35f7;
+}
+
+.pagesInfo {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-size: 12px;
+}
+
+.paginationButton {
+    border-radius: 50%;
+    background-color: #5932ea;
+    width: 30px; 
+    height: 30px; 
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 14px;
+  }
+  
+  .pagesInfo {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .paginationArrow {
+    width: 20px; 
+    height: 20px; 
+  }
